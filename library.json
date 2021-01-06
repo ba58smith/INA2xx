@@ -1,0 +1,31 @@
+{
+  "name": "INA2xx",
+  "keywords": "INA219, INA220, INA226, INA230, INA231, INA260, INA3221, SensESP, Signal K, marine, boat, sensor, hardware, embedded, device",
+  "description": "Library to use INA2xx sensors with SignalK/SensESP",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/SensESP/INA2xx.git"
+  },
+  "authors":
+  [
+    {
+      "name": "Brian Butch Smith",
+      "email": "ba58smith@gmail.com",
+      "url": "https://github.com/ba58smith/",
+      "maintainer": true
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "signalk/SensESP"
+    },
+    {
+      "name": "INA",
+      "version": "https://github.com/Zanduino/INA"
+    }
+  ],
+  "version": "1.0.0",
+  "frameworks": "arduino",
+  "platforms": "*"
+}
