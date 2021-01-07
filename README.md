@@ -1,2 +1,4 @@
 # INA2xx
-Library for reading one or more INAxxx and INAxxxx High Side / Low Side Current and Power Sensors.
+Library for reading one or more INAxxx and INAxxxx High Side / Low Side Current and Power Sensors in SignalK/SensESP
+
+
