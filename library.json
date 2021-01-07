@@ -18,9 +18,6 @@
   ],
   "dependencies": [
     {
-      "name": "signalk/SensESP"
-    },
-    {
       "name": "INA",
       "version": "https://github.com/Zanduino/INA"
     }

@@ -4,7 +4,7 @@
 #include <INA.h>
 #include <Wire.h>
 
-#include "sensor.h"
+#include "sensors/sensor.h"
 
 
   /**
