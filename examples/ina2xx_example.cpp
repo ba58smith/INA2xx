@@ -5,7 +5,7 @@
 #define USE_LIB_WEBSOCKET true
 
 #include "sensesp_app.h"
-#include "sensors/ina2xx.h"
+#include "ina2xx.h"
 #include "signalk/signalk_output.h"
 
 ReactESP app([]() {
