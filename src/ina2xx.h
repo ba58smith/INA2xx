@@ -6,15 +6,14 @@
 
 #include "sensors/sensor.h"
 
-
   /**
    * @brief INA2xx represents a Texas Instruments (or compatible) INA2xx
    * High-Side/Low-Side Bi-Directional I2C Current and Power sensor. It works
-   * with several different INA chips, but only one at a time.
+   * with several different INA chips, one or more at a time.
    * 
-   * The INA3221 has three channels, and although the Zanduino library is capable
-   * of accessing all three of them in the same program, this implementation
-   * handles only one of them - channel_0.
+   * The INA3221 has three channels, and this implementation handles all of them.
+   * They will be recognized by the library in numeric order: first channel_0,
+   * then channel_1, then channel_2.
    *
    * For a list of all the sensors it works with, see
    * https://github.com/Zanduino/INA/wiki
@@ -32,9 +31,15 @@
    *
    * @param shunt_micro_ohms Value of the shunt resistor on the sensor in
    * micro-ohms, e.g. 100000 is 0.1 0hm.
-   *
+   * 
+   * @param ina_class OPTIONAL - used only if you create an INA_Class in your
+   * main.cpp before you call the INA2xx constructor. If you don't provide
+   * this parameter, the default INA_Class constructor will be called:
+   
+            ina_class = new INA_Class;
+
    * See https://github.com/Zanduino/INA/wiki/begin() for details on determining
-   * the value of these parameters.
+   * the value of max_amps and shunt_micro_ohms.
    *
    * The INA library allows you to set other values besides the two parameters
    * above. SensESP uses the library's default values for all of these, EXCEPT
@@ -63,7 +68,6 @@
     bool sensor_detected_ = true;
 };
 
-
 /**
  * @brief INA2xxValue reads and outputs the specified value of an INA2xx sensor.
  * 
@@ -71,7 +75,8 @@
  * 
  * @param deviceNum_ Identifies the physical INAxxx that is found on the I2C bus.
  * 0 is the first device, 1 is the second, etc. Devices are in ascending order of
- * the I2C address. 
+ * the I2C address. If one of them is an INA3221, its 3 channels will be assigned
+ * their device numbers in order.
  * 
  * @param val_type The type of value you're reading:
  *      bus_volts, shunt_volts, watts, or amps.
