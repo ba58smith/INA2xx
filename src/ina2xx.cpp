@@ -2,7 +2,6 @@
 #include <RemoteDebug.h>
 #include "sensesp.h"
 
-
 INA2xx::INA2xx(uint16_t max_amps, uint32_t shunt_micro_ohms, INA_Class* ina_class) {
   if (ina_class == NULL) {
     ina_class = new INA_Class;
