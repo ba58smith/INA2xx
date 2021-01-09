@@ -1,5 +1,3 @@
-// INA2xx_example.cpp
-
 #include <Arduino.h>
 
 #define USE_LIB_WEBSOCKET true
