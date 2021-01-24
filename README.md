@@ -22,7 +22,7 @@ lib_deps =
    https://github.com/SensESP/INA2xx.git
 ```
 
-6. Replace the contents of your Project's `main.cpp` file with the contents of the [example file](https://github.com/SensESP/INA2xx/blob/main/examples/ina2xx_example.cpp) that's included with this library.
+6. Replace your Project's `main.cpp` file with the [example file](https://github.com/SensESP/INA2xx/blob/main/examples/main.cpp) that's included with this library.
 
 7. Modify your `main.cpp` to reflect the sensor or sensors that you're actually testing with. Be sure
 to read the comments in the example that explain how to determine the order of multiple sensors, how to use the 3-channel
