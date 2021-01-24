@@ -26,10 +26,10 @@ lib_deps =
 
 7. Modify your `main.cpp` to reflect the sensor or sensors that you're actually testing with. Be sure
 to read the comments in the example that explain how to determine the order of multiple sensors, how to use the 3-channel
-INA3221, etc.
+INA3221, etc. Also, it's CRITICAL that you set the correct values for `max_amps` and `shunt_micro_ohms`. See [this document](https://github.com/SensESP/INA2xx/blob/main/Setting%20of%20Max%20Expected%20Amps%20in%20INA2xx.pdf) for details.
 
 8. Build, upload, and test your Project.
 
-Once you have it working properly, you can include this library in any SensESP Project just by following Step 5 above.
+Once you have the example working properly, you can include this library in any SensESP Project just by following Step 5 above.
 
 
