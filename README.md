@@ -14,7 +14,7 @@ Library for reading one or more INAxxx and INAxxxx High Side / Low Side Current 
 This library allows you to use one or more - of the same or different variants - of the INAxxx and INAxxxx in the same
 SensESP Project (`main.cpp`). It recognizes the 3-channel INA3221 as three different sensors. Here's how to use it.
 
-1. Follow the instructions in the SensESP [README](https://github.com/SignalK/SensESP#sensesp) to install Signal K
+1. Follow the instructions in the SensESP [README](https://github.com/SignalK/SensESP/tree/v1#sensesp) to install Signal K
 and SensESP.
 
 2. Don't try to use this library until after you have successfully built and uploaded one of the SensESP examples
@@ -22,7 +22,7 @@ and seen the desired output in the Signal K Server.
 
 3. Start a new Project in PlatformIO.
 
-4. Follow the instructions in the SensESP README (and the Wiki if you need [detailed instructions](https://github.com/SignalK/SensESP/wiki/SensESP-Overview-and-Programming-Details#getting-a-good-platformioini-file)) for getting a good `platformio.ini` file for
+4. Follow the instructions in the SensESP README (and the Wiki if you need [detailed instructions](https://github.com/SignalK/SensESP/wiki/SensESP-Overview-and-Programming-Details-(for-SensESP-version-1)#getting-a-good-platformioini-file)) for getting a good `platformio.ini` file for
 your Project.
 
 5. Make one modification to your shiny new `platformio.ini` - add this library to the `lib_deps` section, like this:
