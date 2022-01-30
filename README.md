@@ -32,11 +32,11 @@ lib_deps =
    https://github.com/ba58smith/INA2xx.git
 ```
 
-6. Replace your Project's `main.cpp` file with the [example file](https://github.com/SensESP/INA2xx/blob/main/examples/main.cpp) that's included with this library.
+6. Replace your Project's `main.cpp` file with the [example file](https://github.com/ba58smith/INA2xx/blob/main/examples/main.cpp) that's included with this library.
 
 7. Modify your `main.cpp` to reflect the sensor or sensors that you're actually testing with. Be sure
 to read the comments in the example that explain how to determine the order of multiple sensors, how to use the 3-channel
-INA3221, etc. Also, it's CRITICAL that you set the correct values for `max_amps` and `shunt_micro_ohms`. See [this document](https://github.com/SensESP/INA2xx/blob/main/Setting%20of%20Max%20Expected%20Amps%20in%20INA2xx.pdf) for details.
+INA3221, etc. Also, it's CRITICAL that you set the correct values for `max_amps` and `shunt_micro_ohms`. See [this document](https://github.com/ba58smith/INA2xx/blob/main/Setting%20of%20Max%20Expected%20Amps%20in%20INA2xx.pdf) for details.
 
 8. Build, upload, and test your Project.
 
